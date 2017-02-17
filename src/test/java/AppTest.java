@@ -13,10 +13,10 @@ import static org.testng.Assert.*;
 
 public class AppTest {
     //---------------------------------------------------
-    static WebDriver driver;
-    String titleOfBook;
-    String randomNumber;
-    String descriptionOfBook;
+    private static WebDriver driver;
+    private String titleOfBook;
+    private String randomNumber;
+    private String descriptionOfBook;
     AddReviewForm addForm;
 
     @DataProvider(name = "browserType") //could be factory???????
@@ -53,7 +53,7 @@ public class AppTest {
     }
 
     //---------------------------------------------------
-    @Test
+    @Test (dataProvider = "browserType")
     public void Test_submitAValidReviewRefreshThePageAndCheckIsItAppears(Browsers browserType){
         //given
         driver = initWithGettingWebDriver(browserType);
@@ -98,18 +98,18 @@ public class AppTest {
         //assertTrue(false);
     }
     //---------------------------------------------------
-    @Test (dataProvider = "browsertype")
+    @Test (dataProvider = "browserType")
     public void Test_submitOnlyTitleAddedReview(Browsers browserType){
         //given
 
         //when
 
         //then
-        throw new NotImplementedException(Browsers browserType);
+        throw new NotImplementedException();
         //assertEquals(,);
     }
     //---------------------------------------------------
-    @Test (dataProvider = "browsertype")
+    @Test (dataProvider = "browserType")
     public void Test_submitOnlyDescriptionAddedReview(Browsers browserType){
         //given
 
@@ -121,7 +121,7 @@ public class AppTest {
     }
     //...and so on
     //---------------------------------------------------
-    @Test (dataProvider = "browsertype")
+    @Test (dataProvider = "browserType")
     public void Test_submitFilledReviewButTitle(Browsers browserType){
         //given
 
