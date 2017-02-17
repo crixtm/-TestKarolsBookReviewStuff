@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestKarolsBookReviewStuff.iml" filepath="$PROJECT_DIR$/.idea/modules/TestKarolsBookReviewStuff.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestKarolsBookReviewStuff_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TestKarolsBookReviewStuff_main.iml" group="TestKarolsBookReviewStuff" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestKarolsBookReviewStuff_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TestKarolsBookReviewStuff_test.iml" group="TestKarolsBookReviewStuff" />
+    </modules>
+  </component>
+</project>
