@@ -19,6 +19,11 @@ repositories {
     jcenter()
 }
 
+def jbehave = "4.1"
+def jbehaveWebSelenium = "3.5.5"
+
+
+
 dependencies {
     // The production code uses Guava
     compile 'com.google.guava:guava:20.0'
@@ -35,8 +40,15 @@ dependencies {
 
 
     // https://mvnrepository.com/artifact/org.jbehave/jbehave-core
-    compile group: 'org.jbehave', name: 'jbehave-core', version: '4.1'
+    //testcompile group: 'org.jbehave', name: 'jbehave-core', version: '4.1'
+    testCompile "org.jbehave:jbehave-core:" + jbehave
+    testCompile "org.jbehave.web:jbehave-web-selenium:" + jbehaveWebSelenium
+    testCompile "org.jbehave.site:jbehave-site-resources:3.1.1:@zip"
+
 }
+
+sourceSets.test.resources.srcDir 'src/test/java'
+
 
 // Define the main class for the application
 mainClassName = 'App'

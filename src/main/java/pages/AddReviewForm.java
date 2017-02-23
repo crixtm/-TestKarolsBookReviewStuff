@@ -11,25 +11,25 @@ import org.openqa.selenium.support.FindBy;
 public class AddReviewForm {
 
     @FindBy(id = "titleInput")
-    WebElement titleInput;
+    private WebElement titleInput;
     @FindBy(id = "descriptionArea")
-    WebElement descriptionInput;
+    private WebElement descriptionInput;
     @FindBy(id = "ratingInput")
-    WebElement ratingInput;
+    private WebElement ratingInput;
     @FindBy(id = "submitButton")
-    WebElement submitButton;
+    private WebElement submitButton;
 
-    public void submitAReview(WebDriver diver){
+    public void submitAReview(){
         submitButton.click();
     }
 
-    public void fillTitleField(WebDriver driver, String titleOfBook){
+    public void fillTitleField(String titleOfBook){
         titleInput.sendKeys(titleOfBook);
     }
-    public void fillDescriptionField(WebDriver driver, String descriptionOfBook){
+    public void fillDescriptionField(String descriptionOfBook){
         descriptionInput.sendKeys(descriptionOfBook);
     }
-    public void fillRatingField(WebDriver driver, String ratingOfBook){
+    public void fillRatingField(String ratingOfBook){
         ratingInput.sendKeys(ratingOfBook);
     }
 }
