@@ -14,7 +14,6 @@ import static org.testng.Assert.*;
 
 class TestTheSubmitReviewSteps {
     //---------------------------------------------------
-<<<<<<< HEAD:src/test/java/TestTheSubmitReviewSteps.java
     private WebDriver driver;
     private String titleOfBook;
     private String randomNumber;
@@ -49,13 +48,6 @@ class TestTheSubmitReviewSteps {
         resultList = new Result(driver);
         assertEquals(resultList.getLastTitle().getText(),titleOfBook);
     }
-=======
-    private static WebDriver driver;
-    private String titleOfBook;
-    private String randomNumber;
-    private String descriptionOfBook;
-    AddReviewForm addForm;
->>>>>>> 23fc95b78967f5c120c57476a6be28b5fe9d0e06:src/test/java/AppTest.java
 
    //////// need to substitute with some jBehave Magic
     /* @DataProvider(name = "browserType") //could be factory???????
@@ -90,17 +82,10 @@ class TestTheSubmitReviewSteps {
         //then
         assertEquals(driver.getTitle(),"MyBooksReview");
     }
-<<<<<<< HEAD:src/test/java/TestTheSubmitReviewSteps.java
 */
     /*//---------------------------------------------------
     @Test
     public void Test_submitAValidReviewRefreshThePageAndCheckIsItAppears(helper.Browsers browserType){
-=======
-
-    //---------------------------------------------------
-    @Test (dataProvider = "browserType")
-    public void Test_submitAValidReviewRefreshThePageAndCheckIsItAppears(Browsers browserType){
->>>>>>> 23fc95b78967f5c120c57476a6be28b5fe9d0e06:src/test/java/AppTest.java
         //given
         driver = initWithGettingWebDriver(browserType);
         AddReviewForm addForm = PageFactory.initElements(driver, AddReviewForm.class);
@@ -144,13 +129,8 @@ class TestTheSubmitReviewSteps {
         //assertTrue(false);
     }
     //---------------------------------------------------
-<<<<<<< HEAD:src/test/java/TestTheSubmitReviewSteps.java
     @Test (dataProvider = "browsertype")
     public void Test_submitOnlyTitleAddedReview(helper.Browsers browserType){
-=======
-    @Test (dataProvider = "browserType")
-    public void Test_submitOnlyTitleAddedReview(Browsers browserType){
->>>>>>> 23fc95b78967f5c120c57476a6be28b5fe9d0e06:src/test/java/AppTest.java
         //given
 
         //when
@@ -160,13 +140,8 @@ class TestTheSubmitReviewSteps {
         //assertEquals(,);
     }
     //---------------------------------------------------
-<<<<<<< HEAD:src/test/java/TestTheSubmitReviewSteps.java
     @Test (dataProvider = "browsertype")
     public void Test_submitOnlyDescriptionAddedReview(helper.Browsers browserType){
-=======
-    @Test (dataProvider = "browserType")
-    public void Test_submitOnlyDescriptionAddedReview(Browsers browserType){
->>>>>>> 23fc95b78967f5c120c57476a6be28b5fe9d0e06:src/test/java/AppTest.java
         //given
 
         //when
@@ -177,13 +152,8 @@ class TestTheSubmitReviewSteps {
     }
     //...and so on
     //---------------------------------------------------
-<<<<<<< HEAD:src/test/java/TestTheSubmitReviewSteps.java
     @Test (dataProvider = "browsertype")
     public void Test_submitFilledReviewButTitle(helper.Browsers browserType){
-=======
-    @Test (dataProvider = "browserType")
-    public void Test_submitFilledReviewButTitle(Browsers browserType){
->>>>>>> 23fc95b78967f5c120c57476a6be28b5fe9d0e06:src/test/java/AppTest.java
         //given
 
         //when
